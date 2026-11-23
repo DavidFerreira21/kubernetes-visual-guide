@@ -102,7 +102,7 @@ make lab-status LAB=01.01
 - [ ] Expliquei por que a alteração manual não foi revertida automaticamente.
 - [ ] Reapliquei o YAML, confirmei o valor original e removi apenas o ConfigMap.
 
-**Próxima aula:** [Aula 01.02 — Pods](../../pods/README.md). O [🧪 Lab 01.05](../services-basico/README.md) aborda Services e descoberta de backends.
+**Próximo passo, sem pular conceitos:** [Aula 01.02 — Pods](../../pods/README.md) → [Lab 01.02 — Pods](../pods-basico/README.md) → [Aula 01.03 — Deployments](../../deployments/README.md). Services será estudado no Lab 01.05.
 
 ## Perguntas de diagnóstico e reflexão
 
