@@ -64,7 +64,6 @@ Um Pod receber IP não prova que uma aplicação esteja escutando. O teste por I
 
 [🧪 Lab 03.12](../labs/cni-comunicacao-basico/README.md) — desafio YAML, observação e experimento com evidências. Quando um componente não está no Kind, o lab diferencia **analogia local** de teste da implementação real.
 
-**Complementar opcional:** [Aprofundamento sobre CNI e comunicação de rede](complementares/README.md); não é necessário para executar o laboratório.
 
 ## ✅ Revisão do aprendizado
 

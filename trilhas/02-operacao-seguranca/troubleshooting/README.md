@@ -56,7 +56,6 @@ Não use `kubectl delete -A`, `drain` ou `rollout restart` como primeiro diagnó
 
 **[🧪 Lab 02.14](../labs/troubleshooting-basico/README.md):** escreva o YAML do desafio, compare resultados e investigue as condições de execução. O lab não exige leitura complementar.
 
-**Complementar opcional:** [Consultar aprofundamento 02.14](complementares/README.md). Referência adicional; não é necessária para executar o lab.
 
 ## ✅ Revisão do aprendizado
 
