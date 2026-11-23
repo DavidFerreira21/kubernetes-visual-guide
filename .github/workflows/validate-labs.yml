@@ -45,6 +45,11 @@ jobs:
           python scripts/validate_manifests.py
           python scripts/validate_lab_resources.py
 
+      - name: Full curriculum tests and semantic validation (49 labs)
+        run: |
+          python -m unittest discover -s tests -p 'test_*.py' -v
+          make validate
+
       - name: Verify shell scripts use LF and pass Bash syntax
         shell: bash
         run: |

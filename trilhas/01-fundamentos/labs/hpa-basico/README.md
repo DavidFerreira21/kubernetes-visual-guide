@@ -26,6 +26,8 @@ kubectl get apiservice v1beta1.metrics.k8s.io
 kubectl top nodes
 ```
 
+Para preparar um ambiente Kind descartável com validações e cleanup, consulte o [guia detalhado de Metrics Server](../../../../docs/ambientes/01-hpa-metrics-server.md).
+
 Se não existir Metrics Server, instale-o conforme [instruções oficiais](https://github.com/kubernetes-sigs/metrics-server). No Kind, certificados self-signed dos kubelets podem exigir `--kubelet-insecure-tls` **somente neste ambiente local**. Confirme que `kubectl top nodes` funciona antes de esperar escala; nunca copie a flag insegura para produção.
 
 ## Fase 2 — Aplicar

@@ -29,6 +29,8 @@ kubectl rollout status deployment/traefik -n traefik --timeout=180s
 kubectl get ingressclass
 ```
 
+Para uma preparação versionada e evidências de homologação, siga o [guia detalhado de Traefik no Kind](../../../../docs/ambientes/01-ingress-traefik.md).
+
 Confirme que existe uma IngressClass `traefik`. Charts e políticas de cluster podem mudar; ajuste a instalação ao ambiente caso seja necessário. Não exponha portas 80/443 no host para executar este lab; use port-forward.
 
 ## Fase 2 — Aplicar

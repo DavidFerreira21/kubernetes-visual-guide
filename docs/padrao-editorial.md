@@ -1,4 +1,4 @@
-# Padrão editorial — Kubernetes Learning Path
+# Padrão editorial — Kubernetes Visual Guide
 
 [⌂ Início](../README.md) · [📦 Camada 01](../trilhas/01-fundamentos/README.md) · [🧪 Guia dos labs](labs.md)
 
