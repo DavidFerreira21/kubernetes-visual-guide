@@ -2,7 +2,9 @@
 
 [⌂ Início](../README.md) · [📚 Catálogo de 49 aulas](catalogo.md) · [🧪 Labs](labs.md) · [☸️ Kind](../install-kind.md)
 
-> **Sua jornada:** fundamentos → operação → arquitetura → ferramentas do ecossistema. As 49 aulas compõem o [catálogo curricular](catalogo.md); **laboratórios são adicionados progressivamente; 49 PNGs já estão integrados**.
+> **Sua jornada:** fundamentos → operação → arquitetura → ferramentas do ecossistema. As 49 aulas compõem o [catálogo curricular](catalogo.md); **49 roteiros de laboratório estão publicados e 49 PNGs já estão integrados**.
+
+**Primeira vez no Kubernetes?** Faça o [percurso guiado do aluno](primeiros-passos.md): ambiente, aula 01.01, Lab 01.01, Pods e Deployments.
 
 ## Visão geral da jornada
 

@@ -9,6 +9,8 @@
 
 ---
 
+**Começando agora?** Siga o [percurso guiado do aluno, da aula 01.01 à 01.03](../../docs/primeiros-passos.md) antes de percorrer o catálogo completo.
+
 **Padrão de referência da trilha:** [Contrato editorial e checklist de qualidade](../../docs/padrao-editorial.md). A estrutura está documentada; a homologação funcional dos 14 labs em Kind continua sujeita a evidências de execução.
 
 ## 🚀 Seu primeiro percurso
@@ -23,7 +25,7 @@
 
 ## 📚 Catálogo de aulas — ordem oficial
 
-A sequência abaixo acompanha o [catálogo curricular de 52 aulas](../../docs/catalogo.md). As **14 aulas já possuem explicação teórica e infográfico**. Os 14 labs da Camada 01 estão disponíveis como desafios de prática ativa, sem remover os materiais complementares existentes. A coluna **Complementares** apresenta referências opcionais para aprofundamento; aulas e labs permanecem autocontidos.
+A sequência abaixo acompanha o [catálogo curricular de 49 aulas](../../docs/catalogo.md). As **14 aulas já possuem explicação teórica e infográfico**. Os 14 labs da Camada 01 estão disponíveis como desafios de prática ativa, sem remover os materiais complementares existentes. A coluna **Complementares** apresenta referências opcionais para aprofundamento; aulas e labs permanecem autocontidos.
 
 | Aula | Conceito | Aula | Lab | Complementares |
 | --- | --- | --- | --- | --- |

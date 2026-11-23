@@ -6,13 +6,13 @@
 
 Aprenda os conceitos, execute laboratórios com **Kind**, investigue o comportamento do cluster e avance até **extensibilidade, GitOps e ferramentas cloud-native**.
 
-![Kubernetes](https://img.shields.io/badge/Kubernetes-Learning%20Path-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-Visual%20Guide-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
 ![Tópicos](https://img.shields.io/badge/49%20aulas-no%20cat%C3%A1logo-334155?style=flat-square)
 ![Camadas](https://img.shields.io/badge/4%20camadas-de%20estudo-0F766E?style=flat-square)
 ![Ambiente](https://img.shields.io/badge/Labs-Kind-8B5CF6?style=flat-square)
 ![Status](https://img.shields.io/badge/Projeto-em%20evolu%C3%A7%C3%A3o-D97706?style=flat-square)
 
-[**Catálogo de 49 aulas e imagens**](docs/catalogo.md) · [**Começar a estudar**](docs/roadmap.md) · [**Preparar o Kind**](install-kind.md) · [**Explorar os labs**](docs/labs.md)
+[**Primeira vez aqui? Comece por este roteiro**](docs/primeiros-passos.md) · [**Catálogo de 49 aulas e imagens**](docs/catalogo.md) · [**Roadmap**](docs/roadmap.md) · [**Preparar o Kind**](install-kind.md)
 
 </div>
 
@@ -37,9 +37,9 @@ Quatro camadas complementares: **usar → operar → compreender → explorar fe
 
 | Passo | Sua ação | Material |
 | :---: | --- | --- |
-| **01** | Configure o cluster local com um Control Plane e dois Workers | [Guia Kind + WSL](install-kind.md) |
-| **02** | Explore a API e o estado declarativo, começando pelo Lab 01.01 | [🧪 Lab 01.01](trilhas/01-fundamentos/labs/fundamentos-cluster/README.md) |
-| **03** | Após Pods e Deployments, estude como Services descobrem e acessam os backends | [🧪 Lab 01.05](trilhas/01-fundamentos/labs/services-basico/README.md) |
+| **01** | Prepare as ferramentas e crie um cluster Kind com um Control Plane e dois Workers | [Guia de ambiente](install-kind.md) |
+| **02** | Leia a aula 01.01, complete seu próprio YAML e execute o primeiro lab | [Aula 01.01](trilhas/01-fundamentos/fundamentos/README.md) · [Lab 01.01](trilhas/01-fundamentos/labs/fundamentos-cluster/README.md) |
+| **03** | Avance em ordem para Pods e Deployments, comparando os controladores | [Roteiro guiado de início](docs/primeiros-passos.md) |
 
 ```bash
 make up          # Cria o cluster Kind local
@@ -48,7 +48,7 @@ make validate    # Executa validação estática dos exemplos
 make lab-prepare LAB=01.01  # Cria namespace e starter, sem solução
 kubectl apply -f .labs/01.01/  # Após escrever o YAML
 make lab-test LAB=01.01         # Confere o recurso criado pelo aluno
-make lab-down    # Remove apenas recursos do lab
+make lab-down LAB=01.01  # Remove apenas recursos do lab
 ```
 
 > **Antes de executar:** confira `kubectl config current-context`. `make down` é diferente de `make lab-down`: o primeiro apaga o cluster Kind inteiro.

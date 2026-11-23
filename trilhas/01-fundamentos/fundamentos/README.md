@@ -59,6 +59,8 @@ kubectl api-resources
 
 ## 🧪 Aplicação prática
 
+**Novo no projeto?** Prepare o Kind pelo [guia de ambiente](../../../install-kind.md), execute o exercício após ler esta aula e depois avance para [Pods, aula 01.02](../pods/README.md). O [roteiro inicial](../../../docs/primeiros-passos.md) reúne essa sequência.
+
 **Atividade prática:** [🧪 Lab 01.01](../labs/fundamentos-cluster/README.md). Exercício guiado com ConfigMap, comparação entre manifesto e objeto no cluster e limpeza segura.
 
 **Complementar opcional:** [Consultar material complementar](complementares/README.md). Referência adicional para consulta após a aula e o lab.
