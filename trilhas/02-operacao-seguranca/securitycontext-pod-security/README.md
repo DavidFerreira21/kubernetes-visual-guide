@@ -51,9 +51,8 @@ Nunca aplique `enforce=restricted` indiscriminadamente em namespaces de sistema.
 
 ## 🧪 Aplicação prática
 
-**[🧪 Lab 02.03](../labs/securitycontext-psa-basico/README.md):** escreva o YAML do exercício, execute no Kind, registre evidências e explique as divergências. O complementar não é pré-requisito.
+**[🧪 Lab 02.03](../labs/securitycontext-psa-basico/README.md):** escreva o YAML do exercício, execute no Kind, registre evidências e explique as divergências. O laboratório é autossuficiente.
 
-**Complementar opcional:** [Consultar aprofundamento 02.03](complementares/README.md). Referência adicional; não é necessária para executar o lab.
 
 ## ✅ Revisão do aprendizado
 

@@ -4,7 +4,9 @@
 
 > **Objetivo da camada:** compreender, configurar e investigar ferramentas de GitOps, políticas, redes e métricas, sem confundir YAML válido com controladores realmente instalados.
 
-**4 aulas com infográfico e teoria** · **4 labs com desafios de YAML real** · **4 complementares opcionais de arquitetura e diagnóstico**
+**4 aulas com infográfico e teoria** · **4 labs com desafios de YAML real** · **3 complementares opcionais de arquitetura e diagnóstico**
+
+**Começando esta camada?** Leia a [jornada guiada de ferramentas](../../docs/percursos/camada-04.md) antes de instalar addons. O Kind padrão não executa automaticamente Argo CD, Kyverno, Cilium ou Prometheus Operator.
 
 ## 🧭 Capacidades por domínio
 
@@ -21,13 +23,13 @@
 | 04.01 | **Argo CD** | [📖 Estudar](argo-cd/README.md) | [🧪 Lab 04.01](labs/argo-cd-basico/README.md) | [Consultar](argo-cd/complementares/README.md) |
 | 04.02 | **Kyverno** | [📖 Estudar](kyverno/README.md) | [🧪 Lab 04.02](labs/kyverno-basico/README.md) | [Consultar](kyverno/complementares/README.md) |
 | 04.03 | **Cilium** | [📖 Estudar](cilium/README.md) | [🧪 Lab 04.03](labs/cilium-basico/README.md) | [Consultar](cilium/complementares/README.md) |
-| 04.04 | **Prometheus + Grafana** | [📖 Estudar](prometheus-grafana/README.md) | [🧪 Lab 04.04](labs/prometheus-grafana-basico/README.md) | [Consultar](prometheus-grafana/complementares/README.md) |
+| 04.04 | **Prometheus + Grafana** | [📖 Estudar](prometheus-grafana/README.md) | [🧪 Lab 04.04](labs/prometheus-grafana-basico/README.md) | — |
 
 ## 🧪 Como estudar
 
 Siga o [contrato editorial](../../docs/padrao-editorial.md). Comece pela aula, preveja o comportamento, complete o starter do lab e consulte os complementares **apenas quando fizer sentido**.
 
-Os labs usam tipos de **API próprios das ferramentas**. Em geral, é necessário **instalar o controlador e as CRDs** antes do `kubectl apply`; `make lab-prepare LAB=04.XX` apenas cria o namespace local e copia o YAML incompleto. `make lab-up` é caminho da CI com addons, não do estudante.
+Os labs usam tipos de **API próprios das ferramentas**. É necessário confirmar a instalação **do controlador e das CRDs** antes do `kubectl apply`; `make lab-prepare LAB=04.XX` apenas cria o namespace local e copia o YAML incompleto. `make lab-up` aplica a solução da CI, não instala addons por conta própria e não substitui a prática do estudante. Confira sempre o contexto Kind e use `make lab-down LAB=04.XX` para limpar apenas os recursos do lab.
 
 [🛠️ Preparar ambientes da Camada 04](../../docs/ambientes/README.md) · [📊 Matriz dos 49 labs](../../docs/matriz-homologacao.md)
 

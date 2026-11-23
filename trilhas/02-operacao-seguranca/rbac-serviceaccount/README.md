@@ -54,9 +54,8 @@ Evite verbos e resources com `*` sem justificativa; não associe ServiceAccounts
 
 ## 🧪 Aplicação prática
 
-**[🧪 Lab 02.02](../labs/rbac-minimo/README.md):** escreva o YAML do exercício, execute no Kind, registre evidências e explique as divergências. O complementar não é pré-requisito.
+**[🧪 Lab 02.02](../labs/rbac-minimo/README.md):** escreva o YAML do exercício, execute no Kind, registre evidências e explique as divergências. O laboratório é autossuficiente.
 
-**Complementar opcional:** [Consultar aprofundamento 02.02](complementares/README.md). Referência adicional; não é necessária para executar o lab.
 
 ## ✅ Revisão do aprendizado
 

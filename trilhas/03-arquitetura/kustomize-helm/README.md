@@ -63,7 +63,6 @@ Para o mesmo ConfigMap, o overlay pode renderizar `staging` sem modificar o obje
 
 [🧪 Lab 03.17](../labs/kustomize-helm-basico/README.md) — desafio YAML, observação e experimento com evidências. Quando um componente não está no Kind, o lab diferencia **analogia local** de teste da implementação real.
 
-**Complementar opcional:** [Aprofundamento sobre Kustomize e Helm](complementares/README.md); não é necessário para executar o laboratório.
 
 ## ✅ Revisão do aprendizado
 

@@ -53,7 +53,6 @@ Requer Prometheus Operator/stack e integração de datasource Grafana. Sem addon
 
 [🧪 Lab 04.04 — Prometheus + Grafana](../labs/prometheus-grafana-basico/README.md): escreva o recurso da ferramenta e execute verificações com pré-requisitos explícitos. **Labs que exigem CRDs, controladores ou AWS não são homologados no Kind padrão.**
 
-**Complementar opcional:** [Aprofundamento e diagnóstico](complementares/README.md) para decisões e falhas comuns, sem substituir a aula e o lab.
 
 ## ✅ Revisão do aprendizado
 

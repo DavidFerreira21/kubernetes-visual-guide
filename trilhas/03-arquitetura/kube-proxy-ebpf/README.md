@@ -60,7 +60,6 @@ Um **Service** declara identidade estável e selectors; controladores publicam E
 
 [🧪 Lab 03.13](../labs/kube-proxy-ebpf-basico/README.md) — desafio YAML, observação e experimento com evidências. Quando um componente não está no Kind, o lab diferencia **analogia local** de teste da implementação real.
 
-**Complementar opcional:** [Aprofundamento sobre kube-proxy e eBPF](complementares/README.md); não é necessário para executar o laboratório.
 
 ## ✅ Revisão do aprendizado
 

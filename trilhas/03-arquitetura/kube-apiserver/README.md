@@ -60,9 +60,8 @@ A API controla a **admissão da intenção**, não o momento em que o kubelet co
 
 ## 🧪 Aplicação prática
 
-[🧪 Lab 03.02 — kube-apiserver](../labs/kube-apiserver-basico/README.md): construa o YAML do desafio, compare estado declarado com observado e registre uma evidência do conceito. O lab é o caminho principal, independente do material opcional.
+[🧪 Lab 03.02 — kube-apiserver](../labs/kube-apiserver-basico/README.md): construa o YAML do desafio, compare estado declarado com observado e registre uma evidência do conceito. O lab é o caminho principal, sem depender de leitura complementar.
 
-**Complementar opcional:** [Guia de decisões e diagnóstico](complementares/README.md). Útil para aprofundar, não é pré-requisito.
 
 ## ✅ Revisão do aprendizado
 

@@ -51,9 +51,8 @@ Alterar taints de nós compartilhados é operacionalmente perigoso. Em laborató
 
 ## 🧪 Aplicação prática
 
-**[🧪 Lab 02.07](../labs/scheduling-basico/README.md):** escreva o YAML do exercício, execute no Kind, registre evidências e explique as divergências. O complementar não é pré-requisito.
+**[🧪 Lab 02.07](../labs/scheduling-basico/README.md):** escreva o YAML do exercício, execute no Kind, registre evidências e explique as divergências. O laboratório é autossuficiente.
 
-**Complementar opcional:** [Consultar aprofundamento 02.07](complementares/README.md). Referência adicional; não é necessária para executar o lab.
 
 ## ✅ Revisão do aprendizado
 
