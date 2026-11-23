@@ -106,12 +106,11 @@ make lab-status LAB=01.01
 
 ## Perguntas de diagnóstico e reflexão
 
-- Qual evidência mostra que um objeto foi aceito pelo API Server, mas o estado esperado ainda não foi observado?
-- Como a leitura de `spec` e `status` mudou sua hipótese sobre reconciliação?
+- Por que um ConfigMap pode existir sem campos `spec` e `status`, ao contrário de recursos como Deployment?
+- Como demonstrar com dois comandos que a alteração feita por `kubectl patch` não é revertida automaticamente pelo arquivo YAML?
+- Qual diferença você observou entre reaplicar o manifesto manualmente e ter um reconciliador GitOps atuando continuamente?
 
-**Evidências específicas:** capture o contexto e os nós do Kind, o objeto declarado e seu `spec`/`status` antes e depois da alteração manual. Explique a reconciliação observada.
-
-- Se um objeto aparece no API Server, mas sua condição ainda não mudou, qual evidência demonstra a etapa de reconciliação pendente?
+**Evidências específicas:** registre o contexto `kind-dev`, os nós do Kind e o valor `data.etapa` nas três fases: primeira aplicação, alteração manual e reaplicação. Explique por que o ConfigMap não volta sozinho ao valor do arquivo.
 
 ## Aprofunde seus conhecimentos
 

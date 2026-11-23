@@ -114,6 +114,8 @@ Os **complementares são opcionais**: fornecem exemplos adicionais, comparação
 
 </details>
 
+**Retomada e homologação:** [auditoria da primeira camada e pendências de CI](docs/auditoria-retomada-2026-11.md).
+
 ## 🗺️ Como usar este repositório
 
 **Leia → aplique → observe → experimente → investigue → limpe.**
