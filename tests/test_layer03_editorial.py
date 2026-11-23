@@ -10,7 +10,7 @@ import yaml
 ROOT = Path(__file__).resolve().parents[1]
 LAYER = ROOT / "trilhas" / "03-arquitetura"
 SLUGS = ["arquitetura-cluster","kube-apiserver","etcd","admission-controllers","kube-controller-manager","crds-custom-resources","custom-controllers-operators","kube-scheduler","cloud-controller-manager","kubelet","container-runtime","cni-comunicacao","kube-proxy-ebpf","coredns","csi-storage","gateway-api","kustomize-helm"]
-COMPLEMENT_INDICES = [1,2,5,6,11,12,14,15,16]
+COMPLEMENT_INDICES = [2,5,6,14,15]
 LINK_RE = re.compile(r"!?\[[^\]]+\]\(([^)]+)\)")
 
 

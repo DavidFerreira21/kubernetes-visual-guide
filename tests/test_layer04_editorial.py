@@ -8,6 +8,7 @@ import yaml
 ROOT = Path(__file__).resolve().parents[1]
 LAYER = ROOT / "trilhas" / "04-platform-engineering"
 SLUGS = ["argo-cd","kyverno","cilium","prometheus-grafana"]
+COMPLEMENT_SLUGS = {"argo-cd", "kyverno", "cilium"}
 LINK_RE = re.compile(r"!?\[[^\]]+\]\(([^)]+)\)")
 
 
@@ -28,7 +29,7 @@ class Layer04EditorialTests(unittest.TestCase):
                     self.assertIn(heading, lesson)
                 questions = lesson.split("## ✅ Revisão do aprendizado", 1)[1].split("## 🔗 Referências oficiais", 1)[0]
                 self.assertGreaterEqual(len(re.findall(r"^- .+\?", questions, re.M)), 3)
-                self.assertIn("complementares/README.md", lesson)
+                self.assertEqual("complementares/README.md" in lesson, slug in COMPLEMENT_SLUGS)
                 self.assertNotIn("Em preparação.", lesson)
                 labdir = LAYER / "labs" / f"{slug}-basico"
                 lab = (labdir / "README.md").read_text(encoding="utf-8")
@@ -48,8 +49,10 @@ class Layer04EditorialTests(unittest.TestCase):
                 self.assertIn("TODO", starter)
                 solution = list(yaml.safe_load_all((labdir / "solution/resources.yaml").read_text(encoding="utf-8")))
                 self.assertTrue(all(isinstance(x, dict) and x.get("kind") and x.get("apiVersion") for x in solution))
-                comp = (LAYER / slug / "complementares" / "README.md").read_text(encoding="utf-8")
-                self.assertIn("Leitura opcional", comp)
+                comp = LAYER / slug / "complementares" / "README.md"
+                self.assertEqual(comp.exists(), slug in COMPLEMENT_SLUGS)
+                if comp.exists():
+                    self.assertIn("Leitura opcional", comp.read_text(encoding="utf-8"))
 
     def test_specific_api_contracts(self):
         def documents(slug):
@@ -65,7 +68,7 @@ class Layer04EditorialTests(unittest.TestCase):
         pages = [LAYER / "README.md"]
         pages += [LAYER / slug / "README.md" for slug in SLUGS]
         pages += [LAYER / "labs" / f"{slug}-basico" / "README.md" for slug in SLUGS]
-        pages += [LAYER / slug / "complementares" / "README.md" for slug in SLUGS]
+        pages += [LAYER / slug / "complementares" / "README.md" for slug in COMPLEMENT_SLUGS]
         for page in pages:
             body = page.read_text(encoding="utf-8")
             for link in LINK_RE.findall(body):

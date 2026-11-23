@@ -57,6 +57,8 @@ O aluno deve conseguir concluir a prática estudando a aula e usando documentaç
 
 Se houver valor adicional, use apenas as seções necessárias: **quando consultar**, **comparações ou alternativas**, **exemplos adicionais**, **referência de comandos**, **diagnóstico**, **limitações/boas práticas** e **referências oficiais**. Declare logo no início que é leitura opcional e inclua links de retorno à aula, lab e camada.
 
+**Critério de permanência:** um complementar precisa apresentar conteúdo que não esteja resolvido na aula e no lab — por exemplo, um caso de falha distinto, uma decisão operacional não trivial, um método reproduzível de diagnóstico ou uma comparação que mude escolhas. Tamanho pequeno, resumo de conceitos ou tabela genérica isolada não justificam material separado. Quando não houver ganho real, remova a página e seus links, mantendo a aula e o lab independentes.
+
 Não criar uma página vazia só para preencher a coluna `Complementares`.
 
 ## Regras de navegação e linguagem

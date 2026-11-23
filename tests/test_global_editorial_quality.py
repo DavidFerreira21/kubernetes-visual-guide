@@ -42,12 +42,9 @@ LAYERS = {
             "hpa-basico"
         ],
         [
-            1,
             2,
             3,
-            4,
-            5,
-            10
+            5
         ]
     ],
     "02": [
@@ -85,12 +82,8 @@ LAYERS = {
             "troubleshooting-basico"
         ],
         [
-            2,
-            3,
-            7,
             10,
-            13,
-            14
+            13
         ]
     ],
     "03": [
@@ -134,15 +127,11 @@ LAYERS = {
             "kustomize-helm-basico"
         ],
         [
-            2,
             3,
             6,
             7,
-            12,
-            13,
             15,
-            16,
-            17
+            16
         ]
     ],
     "04": [
@@ -162,15 +151,14 @@ LAYERS = {
         [
             1,
             2,
-            3,
-            4
+            3
         ]
     ]
 }
 
 
 class GlobalEditorialQualityTests(unittest.TestCase):
-    def test_forty_nine_lessons_labs_and_twenty_five_optional_references(self):
+    def test_forty_nine_lessons_labs_and_thirteen_optional_references(self):
         lessons = labs = refs = 0
         for layer_id, (folder, lesson_slugs, lab_slugs, complement_indices) in LAYERS.items():
             root = ROOT / "trilhas" / folder
@@ -207,7 +195,7 @@ class GlobalEditorialQualityTests(unittest.TestCase):
                     if comp.exists():
                         self.assertIn("Leitura opcional", comp.read_text(encoding="utf-8"))
                         refs += 1
-        self.assertEqual((lessons, labs, refs), (49, 49, 25))
+        self.assertEqual((lessons, labs, refs), (49, 49, 13))
 
     def test_legacy_complementaries_preserved(self):
         for folder in ("1-fundamentos", "2-pod", "3-deployment",

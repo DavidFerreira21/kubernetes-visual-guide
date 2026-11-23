@@ -4,9 +4,11 @@
 
 > **Objetivo da camada:** operar workloads com controle de acesso, políticas de segurança, governança de recursos, scheduling, resiliência e diagnóstico orientado por evidências.
 
-**14 aulas com teoria e infográfico** · **14 labs com desafios YAML e soluções separadas** · **6 complementares opcionais**
+**14 aulas com teoria e infográfico** · **14 labs com desafios YAML e soluções separadas** · **2 complementares opcionais de aprofundamento**
 
 O [padrão editorial](../../docs/padrao-editorial.md) é o mesmo da Camada 01. Os labs possuem contratos e validação estática; **não confunda publicação com homologação funcional integral**. A CI Kind executa 10 labs da Camada 02 (02.01–02.08, 02.10 e 02.11), conforme os checks de cada caso. Os labs 02.09, 02.12, 02.13 e 02.14 exigem validação específica; smoke test não substitui experimentos manuais.
+
+**Começando esta camada?** Siga a [jornada guiada de operação e segurança](../../docs/percursos/camada-02.md) para praticar RBAC, admissão e troubleshooting com contexto, evidência e rollback.
 
 ## 🚀 Percurso recomendado
 
@@ -21,19 +23,19 @@ O [padrão editorial](../../docs/padrao-editorial.md) é o mesmo da Camada 01. O
 | Aula | Conceito | Aula | Lab | Complementares |
 | --- | --- | --- | --- | --- |
 | 02.01 | **Labels, Selectors e Annotations** | [📖 Estudar](labels-selectors-annotations/README.md) | [🧪 Lab 02.01](labs/labels-selectors-basico/README.md) | — |
-| 02.02 | **RBAC e ServiceAccount** | [📖 Estudar](rbac-serviceaccount/README.md) | [🧪 Lab 02.02](labs/rbac-minimo/README.md) | [Consultar](rbac-serviceaccount/complementares/README.md) |
-| 02.03 | **SecurityContext e Pod Security Admission** | [📖 Estudar](securitycontext-pod-security/README.md) | [🧪 Lab 02.03](labs/securitycontext-psa-basico/README.md) | [Consultar](securitycontext-pod-security/complementares/README.md) |
+| 02.02 | **RBAC e ServiceAccount** | [📖 Estudar](rbac-serviceaccount/README.md) | [🧪 Lab 02.02](labs/rbac-minimo/README.md) | — |
+| 02.03 | **SecurityContext e Pod Security Admission** | [📖 Estudar](securitycontext-pod-security/README.md) | [🧪 Lab 02.03](labs/securitycontext-psa-basico/README.md) | — |
 | 02.04 | **ResourceQuota e LimitRange** | [📖 Estudar](resourcequota-limitrange/README.md) | [🧪 Lab 02.04](labs/quota-namespace/README.md) | — |
 | 02.05 | **Init Containers e Sidecars** | [📖 Estudar](init-sidecars/README.md) | [🧪 Lab 02.05](labs/init-sidecars-basico/README.md) | — |
 | 02.06 | **Jobs e CronJobs** | [📖 Estudar](jobs-cronjobs/README.md) | [🧪 Lab 02.06](labs/jobs-cronjobs-basico/README.md) | — |
-| 02.07 | **Taints, Tolerations e Node Affinity** | [📖 Estudar](taints-tolerations-affinity/README.md) | [🧪 Lab 02.07](labs/scheduling-basico/README.md) | [Consultar](taints-tolerations-affinity/complementares/README.md) |
+| 02.07 | **Taints, Tolerations e Node Affinity** | [📖 Estudar](taints-tolerations-affinity/README.md) | [🧪 Lab 02.07](labs/scheduling-basico/README.md) | — |
 | 02.08 | **Topology Spread Constraints** | [📖 Estudar](topology-spread/README.md) | [🧪 Lab 02.08](labs/topology-spread-basico/README.md) | — |
 | 02.09 | **PriorityClass e Preemption** | [📖 Estudar](priorityclass-preemption/README.md) | [🧪 Lab 02.09](labs/priorityclass-basico/README.md) | — |
 | 02.10 | **QoS Classes e Eviction** | [📖 Estudar](qos-eviction/README.md) | [🧪 Lab 02.10](labs/qos-eviction-basico/README.md) | [Consultar](qos-eviction/complementares/README.md) |
 | 02.11 | **PodDisruptionBudget (PDB)** | [📖 Estudar](pdb/README.md) | [🧪 Lab 02.11](labs/pdb-basico/README.md) | — |
 | 02.12 | **Node Maintenance — Cordon, Drain e Uncordon** | [📖 Estudar](node-maintenance/README.md) | [🧪 Lab 02.12](labs/node-maintenance-basico/README.md) | — |
 | 02.13 | **NetworkPolicy** | [📖 Estudar](networkpolicy/README.md) | [🧪 Lab 02.13](labs/networkpolicy-basico/README.md) | [Consultar](networkpolicy/complementares/README.md) |
-| 02.14 | **Kubernetes Troubleshooting** | [📖 Estudar](troubleshooting/README.md) | [🧪 Lab 02.14](labs/troubleshooting-basico/README.md) | [Consultar](troubleshooting/complementares/README.md) |
+| 02.14 | **Kubernetes Troubleshooting** | [📖 Estudar](troubleshooting/README.md) | [🧪 Lab 02.14](labs/troubleshooting-basico/README.md) | — |
 
 ## 📚 Como usar os complementares
 
@@ -41,7 +43,7 @@ A **aula** ensina o conceito e suas decisões; o **lab** orienta a prática e a 
 
 ## 🧪 Contrato dos laboratórios
 
-Em cada lab, execute `make lab-prepare LAB=02.XX`, complete o YAML em `.labs/02.XX/`, aplique usando `kubectl apply`, observe com `make lab-observe` e valide com `make lab-test`. O comando `make lab-up` **aplica a solução e pertence à CI**, nunca ao fluxo inicial do aluno. Use `make lab-down` para limpar recursos declarados; não execute `make down`.
+Em cada lab, execute `make lab-prepare LAB=02.XX`, complete o YAML em `.labs/02.XX/`, aplique usando `kubectl apply`, observe com `make lab-observe` e valide com `make lab-test`. O comando `make lab-up` **aplica a solução e pertence à CI**, nunca ao fluxo inicial do aluno. Use `make lab-down LAB=02.XX` para limpar recursos declarados; não execute `make down`.
 
 **Tipos de evidência:** declarativa (configuração aplicada), funcional (comportamento no Kind) e diagnóstica (falha, causa e reversão). Cada lab possui seu próprio critério de conclusão.
 

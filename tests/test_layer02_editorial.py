@@ -23,7 +23,7 @@ LABS = [
     "qos-eviction-basico", "pdb-basico", "node-maintenance-basico",
     "networkpolicy-basico", "troubleshooting-basico",
 ]
-COMPLEMENTS = (1, 2, 6, 9, 12, 13)  # índices zero-based
+COMPLEMENTS = (9, 12)  # índices zero-based
 LINK_RE = re.compile(r"!?\[[^\]]+\]\(([^)]+)\)")
 
 
